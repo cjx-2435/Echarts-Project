@@ -1,0 +1,23 @@
+@mixin full {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html,
+body,
+#app {
+    @include full;
+    padding: 0;
+    margin: 0;
+}
+
+.com-page,
+.com-container,
+.com-chart {
+    @include full;
+}
+
+canvas{
+    border-radius: 20px;
+}
